@@ -1,3 +1,19 @@
+<?php
+$dossier = 'uploads/';
+$images = [];
+$gestionnaire = opendir('uploads/');
+if ($gestionnaire) {
+    while (false !== ($file = readdir($gestionnaire))) {
+        if ($file != '.' && $file != '..') {
+            $images[] = $file;
+        }
+    }
+    closedir($gestionnaire);
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -18,7 +34,17 @@
     <header>
         <img src="images/logo-miniInsta.png" alt="logo">
     </header>
-    <section class="inscription">
+    <section class="GaleriePhoto">
+        <h1>Galerie Photo </h1>
+        <div class="galerie">
+            <?php
+            foreach ($images as $image) {
+                echo '<div class="photo"><img src="' . $dossier . $image . '" alt="Photo" class="photo"></div>';
+            }   
+            ?>
+        </div>
+    </section>
+    <section class="upload">
         <h1>Upload sur Mini Insta !</h1>
         <div class="formulaire">
             <form action="traitement.php" method="POST" enctype="multipart/form-data">

@@ -20,18 +20,19 @@ header img {
     width: auto;
 }
 
-.inscription {
+
+.upload {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: auto;
     text-align: center;
     padding-top: 1em;
     padding-bottom: 2em;
 }
 
-.inscription h1 {
+.upload h1 {
     text-align: center;
 }
 
@@ -55,13 +56,15 @@ input {
     text-align: center;
 }
 
-input, textarea {
+input,
+textarea {
     border-radius: 1em;
 }
 
-input:focus, textarea:focus {
-    border: 2px solid black; 
-    outline: none; 
+input:focus,
+textarea:focus {
+    border: 2px solid black;
+    outline: none;
 }
 
 footer {
@@ -85,11 +88,33 @@ footer a img {
     height: auto;
     width: auto;
 }
+
 footer a {
     justify-content: center;
     align-content: center;
 }
 
-@media (max-width: 768px) {
-    
+.GaleriePhoto {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    justify-items: center;
+    gap: 1em;
+
 }
+
+
+.GaleriePhoto img {
+    max-width: 100%;
+    max-height: 20em;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    margin: 0 auto;
+    
+
+}
+
+.photo {
+    max-width: 20em;
+    height: 20em;
+}
+
+@media (max-width: 768px) {}
