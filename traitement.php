@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $auteur = $_POST['prenom'];
     $extensionFichier = strtolower(pathinfo($fileName, PATHINFO_EXTENSION));
     $date = date("YmdHis");
-    $nouveauFichierNom = $date . '-' . $auteur . basename($fileName);
+    $nouveauFichierNom = $date . '-' . $auteur . '-' . basename($fileName);
     $autorise = array('jpg', 'jpeg', 'png', 'gif');
 
     if (in_array($extensionFichier, $autorise)) {
