@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    background: linear-gradient(to top right, rgba(0, 0, 0, 0.726), rgba(225, 0, 255, 0.925));
+    color: black;
+    font-family: "Sora", sans-serif;
+    height: 100%;
+
+}
+
+header {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: black;
+    height: 3em;
+}
+
+header img {
+    height: auto;
+    width: auto;
+}
+
+.inscription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.inscription h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    border-radius: 1em;
+    padding: 2em;
+}
+
+input, textarea {
+    border-radius: 1em;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid black; 
+    outline: none; 
+}
+
+footer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: black;
+    height: 3em;
+}
+
+footer img {
+    display: flex;
+    align-content: center;
+    height: auto;
+    width: auto;
+    max-width: 3em;
+    max-height: 100%;
+}
+
+footer a img {
+    height: auto;
+    width: auto;
+}
+footer a {
+    justify-content: center;
+    align-content: center;
+}
+
+@media (max-width: 768px) {
+    
+}
