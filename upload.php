@@ -27,9 +27,13 @@ if (isset($_GET['image'])) {
 
 <body>
     <header>
-        <a href="index.php" target="_blank" rel="noopener noreferrer"><img src="images/logo-miniInsta.png"
+        <a href="index.php" target="_blank" rel="noopener noreferrer"><img src="images/logoMiniInstaSansFond.png"
                 alt="logo"></a>
     </header>
+    <div class="bouton-nav">
+        <a href="index.php"><button>Retour à la page d'acceuil</button></a>
+        <a href="galerie.php"><button>Acceder à la galerie photo</button></a>
+    </div>
     <section class="upload">
         <h1>Upload sur Mini Insta !</h1>
         <div class="formulaire">

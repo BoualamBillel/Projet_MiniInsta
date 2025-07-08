@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background: linear-gradient(to top right, rgba(0, 0, 0, 0.726), rgba(225, 0, 255, 0.925));
+    background-image: url(images/background-header.png);
     color: black;
     font-family: "Sora", sans-serif;
     height: 100%;
@@ -11,8 +11,11 @@ header {
     display: flex;
     align-content: center;
     justify-content: center;
-    background-color: black;
-    height: 6em;
+    background: linear-gradient(to bottom, pink, purple);
+    background-size: cover;
+    height: 6.5em;
+    border-bottom: 5px solid black;
+    border-top: 5px solid black;
 }
 
 header img {
@@ -21,11 +24,14 @@ header img {
     max-height: 100%;
     height: auto;
     width: auto;
+    border: solid black 2px;
+    border-radius: 1em;
 }
 
 header a img {
-    height: 100%;
+    height: 90%;
     width: 6em;
+    margin-top: 0.2em;
 }
 
 section {
@@ -120,7 +126,7 @@ footer a {
     max-height: 20em;
     box-shadow: 0 0 10px rgb(0, 0, 0);
     margin: 0 auto;
-    
+
 
 }
 
@@ -136,6 +142,50 @@ footer a {
     justify-content: center;
     flex-direction: column;
     padding: 2em;
+}
+
+.Info {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.Info h1 {
+    font-size: 3em;
+}
+
+.border-text {
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-bottom: 2em;
+    background-color: black;
+}
+
+.Info .border-text p {
+    font-size: 2em;
+    color: white;
+}
+
+.bouton-nav {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    gap: 0.5em;
+    padding-bottom: 1em;
+}
+
+.bouton-nav-galerie {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    gap: 0.5em;
+    padding-bottom: 1em;
+    padding-top: 2em;
 }
 
 @media (min-width: 1000px) {

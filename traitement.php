@@ -26,6 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
     } else {
         echo "Seul les formats JPEG, JPG, GIF et PNG sont autorisés";
+        echo "<a href='upload.php'><button>Retour à la page d'upload</button></a>";
     }
 }
 ?>

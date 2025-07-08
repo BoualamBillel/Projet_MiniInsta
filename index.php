@@ -32,17 +32,45 @@ if ($gestionnaire) {
 
 <body>
     <header>
-        <a href="index.php" target="_blank" rel="noopener noreferrer"><img src="images/logo-miniInsta.png"
+        <a href="index.php" target="_blank" rel="noopener noreferrer"><img src="images/logoMiniInstaSansFond.png"
                 alt="logo"></a>
     </header>
-    <section class="GaleriePhoto">
-        <h1>Galerie Photo </h1>
-        <div class="galerie">
-            <?php
-            foreach ($images as $image) {
-                echo '<div class="photo"><img src="' . $dossier . $image . '" alt="Photo" class="photo"></div>';
-            }
-            ?>
+    <section class="Info">
+        <h1>MiniInsta :<br> Une Galerie Créative et Libre</h1>
+        <div class="bouton-nav">
+        <a href="upload.php"><button>Uploader votre image</button></a>
+        <a href="galerie.php"><button>Acceder à la galerie photo</button></a>
+        </div>
+
+        <div class="border-text">
+
+            <p>Bienvenue sur <strong>MiniInsta</strong>, un espace où chaque utilisateur devient un artiste.</p>
+
+            <h2>Exprimez votre créativité</h2>
+
+            <p>Plus qu'un simple site d'upload d'images, MiniInsta offre une galerie dynamique où la créativité est
+                reine.</p>
+
+            <h2>Un espace pour chaque photo</h2>
+
+            <p>Chaque photo téléchargée est un coup de pinceau sur une toile virtuelle, un instantané partagé avec le
+                monde.</p>
+
+            <h2>Une galerie évolutive</h2>
+
+            <p>Ici, la liberté d’expression prend forme dans une galerie évolutive, où chaque image trouve sa place
+                parmi les créations des autres.</p>
+
+            <h2>Partagez vos moments</h2>
+
+            <p>Que vous soyez passionné de photographie ou simplement envie de partager un moment, MiniInsta est le lieu
+                où votre créativité prend vie aux côtés de celle des autres.</p>
+
+            <h2>Rejoignez notre œuvre collective</h2>
+
+            <p>Exprimez-vous, laissez votre imagination s’épanouir, et faites partie de cette grande œuvre collective !
+            </p>
+
         </div>
     </section>
     <footer>
