@@ -115,6 +115,26 @@ footer a {
 .photo {
     max-width: 20em;
     height: 20em;
+    margin-bottom: 2em;
 }
 
-@media (max-width: 768px) {}
+@media (min-width: 1000px) {
+
+    .GaleriePhoto {
+        display: grid;
+        justify-items: center;
+        gap: 3em;
+        grid-template-columns: none;
+
+    }
+
+    .galerie {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: initial;
+    }
+
+    .photo {
+        margin-right: 2em;
+    }
+}
