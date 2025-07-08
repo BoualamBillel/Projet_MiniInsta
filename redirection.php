@@ -25,6 +25,7 @@
         <a href="galerie.php"><button>Retour à la galerie.</button></a>
 
     </section>
+    <section class="remplir"></section>
     <footer>
         <a href="https://github.com/BoualamBillel" target="_blank" rel="noopener noreferrer"><img
                 src="images/logo-git-gris.png" alt="logo"></a>
