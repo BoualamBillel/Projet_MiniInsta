@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $uploadDir = 'uploads/';
             $destination = $uploadDir . $nouveauFichierNom;
             if (move_uploaded_file($fileTmpName, $destination)) {
-                header('Location: index.php');
+                header('Location: redirection.php');
                 exit;
             }
         } else {
