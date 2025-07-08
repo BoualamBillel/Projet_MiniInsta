@@ -131,8 +131,8 @@ footer a {
 }
 
 .photo {
-    width: 20em;
-    height: 20em;
+    max-width: 15em;
+    max-height: 15em;
     margin-bottom: 6em;
 }
 
@@ -264,7 +264,7 @@ footer a {
         margin-right: 1em;
         margin-left: 1em;
         flex-direction: column;
-        width: 20em;
-        height: 20em;
+        max-width: 20em;
+        max-height: 20em;
     }
 }
