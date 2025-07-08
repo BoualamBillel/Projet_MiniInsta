@@ -22,6 +22,7 @@ if (isset($_GET['image'])) {
         href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Reddit+Sans+Condensed:wght@200..900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Spinnaker&display=swap" rel="stylesheet">
     <title>Mini Insta - Upload !</title>
 </head>
 
@@ -53,7 +54,7 @@ if (isset($_GET['image'])) {
         echo '<img src="' . $imagePath . '" alt="Image téléchargée" style="max-width: 500px; height: auto;">';
     }
     ?>
-
+<section class="remplir"></section>
     <footer>
         <a href="https://github.com/BoualamBillel" target="_blank" rel="noopener noreferrer"><img
                 src="images/logo-git-gris.png" alt="logo"></a>

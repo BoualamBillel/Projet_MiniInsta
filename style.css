@@ -1,8 +1,10 @@
 body {
     margin: 0;
     background-image: url(images/background-header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: black;
-    font-family: "Sora", sans-serif;
+    font-family: "Spinnaker", sans-serif;
     height: 100%;
 
 }
@@ -172,7 +174,7 @@ footer a {
     margin-right: 2em;
     margin-left: 2em;
     margin-bottom: 2em;
-    background-color: black;
+    background: linear-gradient(to right, pink, purple);
 }
 
 .Info .border-text p {
