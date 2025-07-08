@@ -44,7 +44,9 @@ if ($gestionnaire) {
         <div class="galerie">
             <?php
             foreach ($images as $image) {
-                echo '<div class="photo"><img src="' . $dossier . $image . '" alt="Photo" class="photo"></div>';
+                echo '<div class="photo"><img src="' . $dossier . $image . '" alt="Photo" class="photo">
+                <p>' . basename($image) . '</p> </div>';
+                
             }
             ?>
         </div>

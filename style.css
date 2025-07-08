@@ -134,7 +134,12 @@ footer a {
 .photo {
     max-width: 20em;
     height: 20em;
-    margin-bottom: 2em;
+    margin-bottom: 6em;
+}
+
+.photo p {
+    display: flex;
+    flex-direction: column;
 }
 
 .redir-info {
@@ -255,5 +260,6 @@ footer a {
         align-items: center;
         margin-right: 1em;
         margin-left: 1em;
+        flex-direction: column;
     }
 }
