@@ -30,7 +30,7 @@ if (isset($_GET['image'])) {
         <a href="index.php" target="_blank" rel="noopener noreferrer"><img src="images/logoMiniInstaSansFond.png"
                 alt="logo"></a>
     </header>
-    <div class="bouton-nav">
+    <div class="bouton-nav-pad">
         <a href="index.php"><button>Retour à la page d'acceuil</button></a>
         <a href="galerie.php"><button>Acceder à la galerie photo</button></a>
     </div>

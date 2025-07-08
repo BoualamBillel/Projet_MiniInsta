@@ -27,7 +27,7 @@ if ($gestionnaire) {
         href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Reddit+Sans+Condensed:wght@200..900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
-    <title>Mini Insta</title>
+    <title>Mini Insta - Galerie</title>
 </head>
 
 <body>
@@ -35,7 +35,7 @@ if ($gestionnaire) {
         <a href="index.php" target="_blank" rel="noopener noreferrer"><img src="images/logoMiniInstaSansFond.png"
                 alt="logo"></a>
     </header>
-    <div class="bouton-nav-galerie">
+    <div class="bouton-nav-pad">
         <a href="upload.php"><button>Uploader votre image</button></a>
         <a href="index"><button>Retour à la page d'acceuil</button></a>
     </div>

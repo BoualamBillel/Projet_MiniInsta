@@ -27,7 +27,7 @@ if ($gestionnaire) {
         href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Reddit+Sans+Condensed:wght@200..900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
-    <title>Mini Insta</title>
+    <title>Mini Insta - Acceuil</title>
 </head>
 
 <body>

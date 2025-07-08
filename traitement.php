@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $extensionFichier = strtolower(pathinfo($fileName, PATHINFO_EXTENSION));
     $date = date("YmdHis");
     $nouveauFichierNom = $date . '-' . $auteur . '-' . basename($fileName);
-    $autorise = array('jpg', 'jpeg', 'png', 'gif');
+    $autorise = array('jpg', 'jpeg', 'png', 'gif', 'webp', 'avif');
 
     if (in_array($extensionFichier, $autorise)) {
         if ($fileSize < 25000000) {
@@ -22,11 +22,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 exit;
             }
         } else {
-            echo "La taille maximale d'une photo est de 25mb !";
+            echo "
+                <div class='error-message'>
+                    <h2>Erreur de téléchargement</h2>
+                    <p>La taille de l'image dépasse la limite autorisée (25 MB).</p>
+                    <p><a href='upload.php'><button class='btn-back'>Retour à l'upload</button></a></p>
+                </div>
+            ";
         }
     } else {
-        echo "Seul les formats JPEG, JPG, GIF et PNG sont autorisés";
-        echo "<a href='upload.php'><button>Retour à la page d'upload</button></a>";
+        echo "
+            <div class='error-message'>
+                <h2>Erreur de format</h2>
+                <p>Seuls les formats JPEG, JPG, PNG et GIF sont autorisés.</p>
+                <p><a href='upload.php'><button class='btn-back'>Retour à l'upload</button></a></p>
+            </div>
+        ";
     }
 }
 ?>
