@@ -180,6 +180,10 @@ footer a {
     background-size: cover;
 }
 
+.border-text h2 {
+    font-size: 2em;
+}
+
 .Info .border-text p {
     font-size: 2em;
     color: white;
@@ -316,6 +320,16 @@ button {
         font-size: 3em;
     }
 
+    .Info h1 {
+        font-size: 5em;
+    }
 
+    .border-text h2 {
+    font-size: 4em;
+}
+
+.Info .border-text p {
+    font-size: 3em;
+}
 
 }
