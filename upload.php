@@ -54,7 +54,7 @@ if (isset($_GET['image'])) {
         echo '<img src="' . $imagePath . '" alt="Image téléchargée" style="max-width: 500px; height: auto;">';
     }
     ?>
-<section class="remplir"></section>
+
     <footer>
         <a href="https://github.com/BoualamBillel" target="_blank" rel="noopener noreferrer"><img
                 src="images/logo-git-gris.png" alt="logo"></a>

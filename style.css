@@ -38,6 +38,7 @@ header a img {
 
 section {
     height: auto;
+    min-height: 100vh;
 }
 
 
@@ -346,6 +347,10 @@ button {
 }
 
 .upload h1 {
+    font-size: 3em;
+}
+
+.redir-info {
     font-size: 3em;
 }
 
