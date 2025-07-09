@@ -45,8 +45,13 @@ if ($gestionnaire) {
         <div class="galerie">
             <?php
             foreach ($images as $image) {
+                $nomComplet = pathinfo($image, PATHINFO_FILENAME);
+                $extension = pathinfo($image, PATHINFO_EXTENSION);
+                $part = explode('-', $nomComplet);
+                array_shift($part);
+                $nomSansDate = implode('-', $part);
                 echo '<div class="photo"><img src="' . $dossier . $image . '" alt="Photo" class="photo">
-                <p>' . basename($image) . '</p> </div>';
+                <p>' . $nomSansDate.'.'. $extension. '</p> </div>';
                 
             }
             ?>

@@ -32,7 +32,7 @@ header img {
 
 header a img {
     height: 90%;
-    width: 6em;
+    width: 10em;
     margin-top: 0.2em;
 }
 
@@ -60,6 +60,7 @@ form {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    align-items: center;
     gap: 0.5em;
 }
 
@@ -174,12 +175,21 @@ footer a {
     margin-right: 2em;
     margin-left: 2em;
     margin-bottom: 2em;
-    background: linear-gradient(to right, pink, purple);
+    background-image: url(images/background-header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .Info .border-text p {
     font-size: 2em;
     color: white;
+}
+
+button {
+    height: 3em;
+    width: 12em;
+    font-size: 0.9em;
+    margin-bottom: 1em;
 }
 
 .bouton-nav {
@@ -188,6 +198,7 @@ footer a {
     align-content: space-between;
     gap: 0.5em;
     padding-bottom: 1em;
+
 }
 
 .bouton-nav-pad {
@@ -269,4 +280,42 @@ footer a {
         max-width: 20em;
         max-height: 20em;
     }
+
+
+    header {
+        height: 9.5em;
+    }
+
+    header a img {
+        width: 13em;
+
+    }
+
+    button {
+        height: 4em;
+        width: 13em;
+        font-size: 1em;
+    }
+
+
+
+    .bouton-nav-pad {
+        gap: 3.5em;
+    }
+
+    .bouton-nav {
+        gap: 3.5em;
+    }
+
+    .formulaire input {
+        height: 3em;
+        font-size: 0.5em;
+    }
+
+    form {
+        font-size: 3em;
+    }
+
+
+
 }
