@@ -272,6 +272,10 @@ button {
 
     }
 
+    .GaleriePhoto h1 {
+        font-size: 3em;
+    }
+
     .galerie {
         display: flex;
         flex-wrap: wrap;
