@@ -75,6 +75,11 @@ form {
     font-size: 1.4em;
 }
 
+.formulaire button {
+    height: 2em;
+    width: 12em;
+}
+
 
 
 input {
